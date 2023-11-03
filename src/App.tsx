@@ -1,4 +1,4 @@
-import './App.css'
+import './index.css'
 import { data } from './data/data'
 import { Card } from './card/card'
 import { useState } from "react";
@@ -19,17 +19,20 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <div className="container">
-        <div className="card-container">
-          <button onClick={slideLeft}>left</button>
-          {data.map((person, n) => {
-            let position = n > index ? "nextCard"
-              : n === index ? "activeCard" : "prevCard";
-            return <Card key={n} {...person} cardStyle={position} />;
-          })}
+    <div className="container">
+
+      <div className='buttons-wrapper'>
+         <button onClick={slideLeft}>left</button>
           <button onClick={slideRight}>right</button>
-        </div>
+      </div>
+      <div className="card-container">
+
+        {data.map((person, n) => {
+          let position = n > index ? "nextCard"
+            : n === index ? "activeCard" : "prevCard";
+          return <Card key={n} {...person} cardStyle={position} />;
+        })}
+
       </div>
     </div>
   )

@@ -11,6 +11,7 @@ export const Card = ({ name, img, cardStyle }: ICardProps) => {
             
         // </article>
         <div className={`card ${cardStyle}`}>
+            {/* <img style={{ width: 150, height: 150, objectFit: 'cover' }} src={img} alt={name} /> */}
             <img src={img} alt={name} />
             <h2>{name}</h2>
         </div>
