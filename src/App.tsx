@@ -22,17 +22,16 @@ function App() {
     <div className="container">
 
       <div className='buttons-wrapper'>
-         <button onClick={slideLeft}>left</button>
-          <button onClick={slideRight}>right</button>
-      </div>
-      <div className="card-container">
+        <button onClick={slideLeft}>left</button>
+        <div className="card-container">
+          {data.map((person, n) => {
+            let position = n > index ? "nextCard"
+              : n === index ? "activeCard" : "prevCard";
+            return <Card key={n} {...person} cardStyle={position} />;
+          })}
 
-        {data.map((person, n) => {
-          let position = n > index ? "nextCard"
-            : n === index ? "activeCard" : "prevCard";
-          return <Card key={n} {...person} cardStyle={position} />;
-        })}
-
+        </div>
+        <button onClick={slideRight}>right</button>
       </div>
     </div>
   )

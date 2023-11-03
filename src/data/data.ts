@@ -1,18 +1,18 @@
 export const data = [
     {
-      name: "simon",
+      name: "picture 1",
       img: "https://images.unsplash.com/photo-1663545284588-fe330c9ccb20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
     },
     {
-      name: "neo",
+      name: "picture 2",
       img: "https://images.unsplash.com/photo-1686240203220-36e31ac972df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
     },
     {
-      name: "morpheus",
+      name: "picture 3",
       img: "https://images.unsplash.com/photo-1686206125513-2477edfa6e6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=412&q=80",
     },
     {
-      name: "trinity",
+      name: "picture 4",
       img: "https://images.unsplash.com/photo-1686206124670-c60395ca31ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
     },
   ];
